@@ -2,9 +2,16 @@
   margin: 50px auto;
   padding-top: 40px;
   width: 300px;
-  background-color: #ffffff;
+  background-color: #e2e2e2fc;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+
+}
+.profile:hover {
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+
 }
 
 .description {
@@ -14,12 +21,22 @@
   width: 300px;
   padding-bottom: 30px;
 }
-
 .avatar {
   display: block;
   width: 100px;
   border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+cursor: pointer;
+
 }
 
 .name {
