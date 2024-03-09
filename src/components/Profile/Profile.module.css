@@ -23,15 +23,10 @@
 .profile {
   margin: 50px auto;
   padding-top: 20px;
-  /* reduced top padding for balance */
   width: 350px;
-  /* adjust to your preference */
   background-color: #fff;
-  /* use pure white for a clean look */
-  border-radius: 20px;
-  /* increased for modern rounded corners */
+   border-radius: 20px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
-  /* softer shadow */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   overflow: hidden;
   animation: fadeInSlideUp 0.7s ease-out forwards;
@@ -49,16 +44,28 @@
   padding: 20px;
 }
 
+
 .avatar {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   border: 6px solid #fff;
-   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
-   animation: scaleIn 0.5s ease-out forwards;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
-   position: relative;
+  position: relative;
   z-index: 1;
+  animation: scaleIn 0.5s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transition for smooth effect */
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  /* Slightly larger scale on hover */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.18);
+  /* Increased shadow for depth */
+  cursor: pointer;
+  /* Change cursor to indicate interactiveness */
 }
 
 .name {
